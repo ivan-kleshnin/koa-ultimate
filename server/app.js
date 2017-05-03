@@ -1,4 +1,5 @@
 let Koa = require("koa")
+let KoaReact = require("koa-react-view")
 let KoaMount = require("koa-mount")
 let KoaStatic = require("koa-static")
 let KoaBody = require("koa-body")
@@ -12,10 +13,18 @@ require("./env")
 require("./passport")
 require("./routes")
 
+// App ---------------------------------------------------------------------------------------------
 let app = new Koa()
 app.keys = ["whatever"]
 app.silent = true
 
+// Plugins -----------------------------------------------------------------------------------------
+KoaReact(app, {
+  extname: ".js", // we build ourselves
+  views: "./client/components",
+})
+
+// Middlewares -------------------------------------------------------------------------------------
 app.use(KoaMount("/public", KoaStatic("./public")))
 app.use(LogMiddleware({level: process.env.LOG_LEVEL}))
 app.use(TimeMiddleware())
