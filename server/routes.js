@@ -1,0 +1,8 @@
+require("./pages/account")
+require("./pages/auth-basic")
+require("./pages/auth-facebook")
+require("./pages/auth-github")
+require("./pages/auth-local")
+require("./pages/auth-twitter")
+require("./pages/home")
+require("./pages/logout")

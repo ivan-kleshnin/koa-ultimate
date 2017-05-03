@@ -1,0 +1,9 @@
+/node_modules/
+/public/
+/ignore/
+/test*.js
+.idea
+.DS_Store
+npm-debug.log
+*.iml
+*.env

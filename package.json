@@ -1,0 +1,35 @@
+{
+  "name": "koa-ultimate",
+  "version": "1.0.0",
+  "main": "server/run.js",
+  "scripts": {
+    "build": "babel components/**/*.jsx -d ./",
+    "start": "nodemon | pino"
+  },
+  "author": "Ivan Kleshnin <ivan@paqmind.com> (paqmind.com)",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "koa": "^2.2.0",
+    "koa-body": "^2.0.0",
+    "koa-mount": "^3.0.0",
+    "koa-passport": "^3.0.0",
+    "koa-router": "^7.1.1",
+    "koa-session": "^5.0.0",
+    "koa-static": "^3.0.0",
+    "passport": "^0.3.2",
+    "passport-github2": "^0.1.5",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "pino": "^4.5.0",
+    "ramda": "^0.23.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
