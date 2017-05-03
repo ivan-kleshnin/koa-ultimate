@@ -25,7 +25,7 @@ function Menu(props) {
 module.exports = function Layout(props) {
   return <html>
     <head>
-      <title>Passport Examples</title>
+      <title>Koa Ultimate</title>
     </head>
     <body>
       <Menu {...props}/>
