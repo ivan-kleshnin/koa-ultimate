@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server/run.js",
   "scripts": {
-    "build": "babel components/**/*.jsx -d ./",
+    "build": "babel client/components/**/*.jsx -d ./",
     "start": "nodemon | pino"
   },
   "author": "Ivan Kleshnin <ivan@paqmind.com> (paqmind.com)",
